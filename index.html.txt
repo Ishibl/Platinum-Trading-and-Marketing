@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رويال هوسبيتاليتي | الكتالوج المتكامل للفنادق</title>
+    <style>
+        :root {
+            --primary-color: #1a2a3a;
+            --accent-color: #c5a880;
+            --text-color: #333;
+            --bg-light: #f4f6f8;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: #fff;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid var(--accent-color);
+        }
+        .logo { font-size: 22px; font-weight: bold; color: var(--accent-color); }
+        nav a { color: white; text-decoration: none; margin-right: 20px; }
+        
+        .container { padding: 40px 50px; }
+        .section-title {
+            color: var(--primary-color);
+            border-right: 5px solid var(--accent-color);
+            padding-right: 15px;
+            margin: 40px 0 20px 0;
+            font-size: 24px;
+        }
+        .section-title:first-of-type { margin-top: 10px; }
+        
+        /* شبكة المنتجات */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .product-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+            background: white;
+        }
+        .product-card:hover { transform: translateY(-5px); }
+        .product-img {
+            width: 100%;
+            height: 220px;
+            background-color: #eaeaea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #white;
+            font-weight: bold;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+        }
+        .product-info { padding: 20px; }
+        .brand { font-size: 12px; color: #888; text-transform: uppercase; font-weight: bold;}
+        .title { font-size: 18px; color: var(--primary-color); margin: 5px 0 10px 0; }
+        .specs { font-size: 13px; color: #666; margin-bottom: 15px; line-height: 1.6; }
+        .price-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 15px;
+        }
+        .price { font-size: 18px; font-weight: bold; color: #27ae60; }
+        .moq { font-size: 12px; color: #e74c3c; font-weight: bold; }
+        .btn-order {
+            display: block;
+            width: 100%;
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            border: none;
+            border-radius: 4px;
+            margin-top: 15px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn-order:hover { background-color: var(--accent-color); color: var(--primary-color); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">ROYAL HOSPITALITY</div>
+        <nav>
+            <a href="#">الرئيسية</a>
+            <a href="#">البورسلين</a>
+            <a href="#">الملاعق والشوك</a>
+            <a href="#">الزجاجيات</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <!-- قســم الملاعق والشوك (Flatware) -->
+        <h2 class="section-title">🍴 خط إنتاج أدوات المائدة الفضية (ستانلس ستيل فندقي)</h2>
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <div class="product-img" style="background: url('https://unsplash.com') center/cover;">طقم أكسفورد</div>
+                <div class="product-info">
+                    <span class="brand">Oxford Trading (جودة تركية)</span>
+                    <h3 class="title">طقم معالق وشوك أكسفورد الفندقي</h3>
+                    <div class="specs">
+                        • <b>الخامة:</b> ستانلس ستيل عيار 18/10 المقاوم للصدأ والتآكل كلياً.<br>
+                        • <b>المميزات:</b> سمك ثقيل ومقاوم للانحناء، لمعان كروم دائم لا يتأثر بالمنظفات الكيميائية الفندقية.<br>
+                        • <b>المحتوى:</b> يتوفر بالقطعة (معلقة رئيسية، شوكة، سكين، معلقة شاي).
+                    </div>
+                    <div class="price-box">
+                        <div class="price">4,000 ج.م <small>/ علبة 24 قطعة</small></div>
+                        <div class="moq">أقل طلب: 15 علبة</div>
+                    </div>
+                    <a href="#" class="btn-order">طلب عينة للمعاينة 📦</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img" style="background: url('https://unsplash.com') center/cover;">طقم شيفيلد</div>
+                <div class="product-info">
+                    <span class="brand">Sheffield Gold (تصاميم كلاسيكية للولائم)</span>
+                    <h3 class="title">طقم ملاعق شيفيلد ذو الحواف المذهبة</h3>
+                    <div class="specs">
+                        • <b>الخامة:</b> ستانلس ستيل مطلي بطبقة ذهبية عيار 24 بتقنية PVD المقاومة للتقشير.<br>
+                        • <b>المميزات:</b> تصميم فاخر لقاعات الحفلات الملكية والـ Fine Dining داخل الفنادق.<br>
+                        • <b>المحتوى:</b> طقم متكامل للشوربة، الوجبة الرئيسية، والحلويات.
+                    </div>
+                    <div class="price-box">
+                        <div class="price">10,500 ج.م <small>/ طقم شنطة متكاملة</small></div>
+                        <div class="moq">أقل طلب: 5 أطقم</div>
+                    </div>
+                    <a href="#" class="btn-order">طلب عينة للمعاينة 📦</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- قســم الكؤوس والزجاجيات (Glassware) -->
+        <h2 class="section-title">🥂 خط إنتاج الكؤوس والزجاجيات المقواة للفنادق</h2>
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <div class="product-img" style="background: url('https://unsplash.com') center/cover;">كؤوس باشابتشي</div>
+                <div class="product-info">
+                    <span class="brand">Paşabahçe (الريادة العالمية في الفندقة)</span>
+                    <h3 class="title">طقم كؤوس عصير V-Line فندقي</h3>
+                    <div class="specs">
+                        • <b>الخامة:</b> زجاج نقي عالي المقاومة للصدمات الحرارية والميكانيكية.<br>
+                        • <b>المميزات:</b> حافة مصقولة بالليزر تمنع التشرخ، قاعدة متزنة تمنع الانقلاب على صواني التقديم.<br>
+                        • <b>السعة:</b> 225 مللى - طقم مكون من 6 قطع.
+                    </div>
+                    <div class="price-box">
+                        <div class="price">700 ج.م <small>/ للطقم 6 قطع</small></div>
+                        <div class="moq">أقل طلب: 50 طقم</div>
+                    </div>
+                    <a href="#" class="btn-order">طلب عينة للمعاينة 📦</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img" style="background: url('https://unsplash.com') center/cover;">أكواب أوشن</div>
+                <div class="product-info">
+                    <span class="brand">Ocean Glasses (كريستال مستورد فاخر)</span>
+                    <h3 class="title">طقم كاسات طويلة سينترا هاي-بول</h3>
+                    <div class="specs">
+                        • <b>الخامة:</b> زجاج كريستالي فائق الشفافية لإبراز ألوان المشروبات والكوكتيلات.<br>
+                        • <b>المميزات:</b> مصمم خصيصاً للبارات والمطاعم المفتوحة بالفنادق، سعة كبيرة وتحمل شاق لغسالات البار السريعة.<br>
+                        • <b>السعة:</b> 420 مللى - طقم مكون من 6 قطع.
+                    </div>
+                    <div class="price-box">
+                        <div class="price">699 ج.م <small>/ للطقم 6 قطع</small></div>
+                        <div class="moq">أقل طلب: 40 طقم</div>
+                    </div>
+                    <a href="#" class="btn-order">طلب عينة للمعاينة 📦</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
